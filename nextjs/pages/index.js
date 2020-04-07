@@ -11,7 +11,6 @@ export default function Index() {
     <Navbar name="Mason Wyatt's Coding Portfolio" buttonOne="Contact" buttonTwo="Projects" linkOne="contact" linkTwo="project"/>
     <Container maxWidth="lg">
         <IndexInfo />
-        <Copyright />
     </Container>
     <BottomNav />
     </>

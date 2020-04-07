@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   paragraph: {
-      marginTop: theme.spacing(2),
+      marginTop: theme.spacing(3),
       fontSize: 24,
   },
 }));
@@ -40,12 +40,12 @@ export default function IndexInfo() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
-          <Paper elevation={3} className={classes.paper}>
+          <Paper elevation={5} className={classes.paper}>
           <img alt='Placeholder'/>
           </Paper>
         </Grid>
         <Grid item xs={8}>
-          <Paper elevation={3} className={classes.paper}>
+          <Paper elevation={5} className={classes.paper}>
             <Typography className={classes.paragraph}>
                 Welcome to Mason Wyatt’s professional programming and coding portfolio,
                 showcasing his latest projects and unique problem-solving skillset. He is determined, creative,
@@ -62,11 +62,6 @@ export default function IndexInfo() {
                 questions.
             </Typography>
           </Paper>
-        </Grid>
-        <Grid item xs={12}>
-            <Typography>
-                Projects Include
-            </Typography>
         </Grid>
       </Grid>
     </div>

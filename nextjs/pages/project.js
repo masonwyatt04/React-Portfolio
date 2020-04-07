@@ -8,8 +8,8 @@ import BottomNav from "../components/BottomNav";
 export default function Project() {
   return ( <>
     <Navbar name="Projects" buttonOne="Homepage" buttonTwo="Contact" linkOne="/" linkTwo="contact"/>
-    <Container maxWidth="md">
-        <Copyright />
+    <Container maxWidth="lg">
+       
     </Container>
     <BottomNav />
     </>

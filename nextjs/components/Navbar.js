@@ -67,6 +67,9 @@ const useStyles = makeStyles((theme) => ({
   buttonTwoStyle: {
     marginRight: theme.spacing(2),
   },
+  buttonThreeStyle: {
+    marginLeft: theme.spacing(2),
+  },
 }));
 
 const theme = createMuiTheme({
@@ -110,6 +113,9 @@ export default function NavBar( props ) {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
+          <Button color="secondary" href='Mason Wyatt Software Engineering Resume.pdf' className={classes.buttonThreeStyle}>
+            Resume
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
