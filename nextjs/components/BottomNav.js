@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
         position: "fixed",
         bottom: theme.spacing(2),
         right: theme.spacing(2),
+        color: '#A033FF',
       },
   }));
 
@@ -37,12 +38,12 @@ const theme = createMuiTheme({
     };
   
     return (
-      <ThemeProvider theme={theme}>
+      // <ThemeProvider theme={theme}>
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <BottomNavigationAction label="Homepage" value="homepage" icon={<HomeIcon />} />
-        <BottomNavigationAction label="Contact" value="contact" icon={<MailOutlineIcon />} />
-        <BottomNavigationAction label="Projects" value="projects" icon={<BuildIcon />} />
+        <BottomNavigationAction label="Homepage" value="homepage" icon={<HomeIcon />} href='/' />
+        <BottomNavigationAction label="Contact" value="contact" icon={<MailOutlineIcon />} href='/contact' />
+        <BottomNavigationAction label="Projects" value="projects" icon={<BuildIcon />} href='/project' />
       </BottomNavigation>
-      </ThemeProvider>
+      // </ThemeProvider>
     );
   }
